@@ -2,17 +2,22 @@
 # -*- coding: utf-8 -*-
 """Task_02."""
 
+
+
+
 def prepare_email(appointments):
     """
     """
     email = []
+
     
-    
-    name = appointments[0]
-    date = appointments[1]
     LIST = 'Dear {}, n\I look forward to meet you on {} \nBest, \n Gp'
-    email.append(LIST.format(name, date))
+   
+    #counter = 0
     for item in appointments:
+        #counter += 1
+        name = item[0]
+        date = item[1]
         
-        print email
-    
+        email.append(LIST.format(name, date))
+        print LIST.format(name, date)
